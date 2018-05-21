@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd ${JENKINS_HOME}/workspace/jkl'
-                sh 'java Hello.java'
+                sh 'javac Hello.java'
             }
         }
         stage('Test') {
             steps {
-                sh 'javac Hello'
+                sh 'java Hello'
             }
         }
         stage('Deploy') {
