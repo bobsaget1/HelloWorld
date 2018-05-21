@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'pwd ${JENKINS_HOME}'
                 sh 'java Hello.java'
             }
         }
