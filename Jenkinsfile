@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd ${JENKINS_HOME}/workshop/jkl'
+                sh 'cd ${JENKINS_HOME}/workspace/jkl'
                 sh 'java Hello.java'
             }
         }
